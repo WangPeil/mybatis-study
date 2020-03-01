@@ -15,4 +15,18 @@ public interface UserDao {
      * @return 所有
      */
     List<User> findAll();
+
+    /**
+     * 根据id查询
+     *
+     * @param id
+     * @return
+     */
+    User findById(Integer id);
+
+    /**
+     * @param user
+     * @return
+     */
+    Integer updateUser(User user);
 }

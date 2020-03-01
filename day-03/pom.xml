@@ -10,8 +10,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>day-01</artifactId>
-
+    <artifactId>day-03</artifactId>
     <dependencies>
         <dependency>
             <groupId>org.mybatis</groupId>
@@ -29,5 +28,10 @@
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+        </dependency>
     </dependencies>
+
 </project>
