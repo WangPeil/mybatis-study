@@ -25,6 +25,7 @@ public interface UserDao {
     User findById(Integer id);
 
     /**
+     * 更新用户
      * @param user
      * @return
      */

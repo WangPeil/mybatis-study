@@ -9,14 +9,15 @@ import java.io.Serializable;
 public class User implements Serializable {
     private Integer id;
     private String name;
-    private String sex;
-    private String address;
+    private Integer age;
 
-    public User(Integer id, String name, String sex, String address) {
+    public User() {
+    }
+
+    public User(Integer id, String name, Integer age) {
         this.id = id;
         this.name = name;
-        this.sex = sex;
-        this.address = address;
+        this.age = age;
     }
 
     public Integer getId() {
@@ -35,20 +36,12 @@ public class User implements Serializable {
         this.name = name;
     }
 
-    public String getSex() {
-        return sex;
+    public Integer getAge() {
+        return age;
     }
 
-    public void setSex(String sex) {
-        this.sex = sex;
-    }
-
-    public String getAddress() {
-        return address;
-    }
-
-    public void setAddress(String address) {
-        this.address = address;
+    public void setAge(Integer age) {
+        this.age = age;
     }
 
     @Override
@@ -56,8 +49,7 @@ public class User implements Serializable {
         return "User{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
-                ", sex='" + sex + '\'' +
-                ", address='" + address + '\'' +
+                ", age=" + age +
                 '}';
     }
 }
